@@ -1,1 +1,2 @@
-# frontend-p1
+Cristian Berrio  
+Manuel Martínez
