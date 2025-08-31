@@ -4,15 +4,19 @@ html, body {
 }
 body{
     display:flex;
-    flex-direction: column
+    flex-direction: column;
 }
 nav{
     flex: 0 0 auto;
     flex-direction: row;
-    display: flex
+    display: flex;
+
 }
 main{
-    flex: 1
+    flex: 1;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
 }
 footer{
     flex: 0 0 auto;
@@ -20,16 +24,22 @@ footer{
 }
 .page-links{
     flex: 3;
-    background-color: antiquewhite;
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
 }
 .user-actions{
     flex: 2;
-    background-color: aqua;
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
 }
 .page-link-ul{
     list-style: none;
     display:flex;
     flex-direction: row;
+    width:60%;
+    justify-content: space-around;
 }
 .product-carousel{
     display:flex;
@@ -41,7 +51,7 @@ footer{
     display: flex;
     flex-direction: column;
     flex: 2;
-    background-color: antiquewhite;
+    align-items: center;
 }
 .sm-ul{
     list-style: none;
@@ -49,8 +59,28 @@ footer{
 .footer-links{
     flex:3;
     display:flex;
-    background-color: aquamarine;
+    justify-content: space-around;
 }
 .contact-p{
     white-space: pre-line;
+}
+.service-article{
+    display:flex;
+    white-space: pre-line;
+}
+.pc-container{
+    display:grid;
+    grid-template-rows: repeat(3, 1fr);
+    place-items: center;
+}
+#pc-container-1{
+    display:flex;
+}
+#pc-container-2{
+    display:flex
+}
+.pc-container-1-item{
+    display:flex; 
+    flex: 3;
+    flex-direction: column;
 }
