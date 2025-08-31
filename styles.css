@@ -1,0 +1,56 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+body{
+    display:flex;
+    flex-direction: column
+}
+nav{
+    flex: 0 0 auto;
+    flex-direction: row;
+    display: flex
+}
+main{
+    flex: 1
+}
+footer{
+    flex: 0 0 auto;
+    display:flex;
+}
+.page-links{
+    flex: 3;
+    background-color: antiquewhite;
+}
+.user-actions{
+    flex: 2;
+    background-color: aqua;
+}
+.page-link-ul{
+    list-style: none;
+    display:flex;
+    flex-direction: row;
+}
+.product-carousel{
+    display:flex;
+}
+.product-carousel__products{
+    display:flex;
+}
+.social-media{
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    background-color: antiquewhite;
+}
+.sm-ul{
+    list-style: none;
+}
+.footer-links{
+    flex:3;
+    display:flex;
+    background-color: aquamarine;
+}
+.contact-p{
+    white-space: pre-line;
+}
