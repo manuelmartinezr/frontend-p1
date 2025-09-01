@@ -115,3 +115,9 @@ footer{
 .menu::after {
   margin-left: 10vh;           
 }
+.cta-banner {
+    text-align: center;
+    padding: 15vh;
+    background: #f8f9fa;
+    border-radius: 1vh;
+}
