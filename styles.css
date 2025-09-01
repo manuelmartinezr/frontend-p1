@@ -5,11 +5,14 @@ html, body {
 body{
     display:flex;
     flex-direction: column;
+    gap:10vh
 }
 nav{
     flex: 0 0 auto;
     flex-direction: row;
     display: flex;
+    background-color: gainsboro;
+    padding:1%
 
 }
 main{
@@ -17,10 +20,13 @@ main{
     display:flex;
     flex-direction: column;
     align-items: center;
+    gap:10vh
 }
 footer{
     flex: 0 0 auto;
     display:flex;
+    background-color: gainsboro;
+    padding:1%
 }
 .page-links{
     flex: 3;
