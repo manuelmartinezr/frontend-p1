@@ -49,9 +49,11 @@ footer{
 }
 .product-carousel{
     display:flex;
+    gap: 10vh
 }
 .product-carousel__products{
     display:flex;
+    gap:10vh
 }
 .social-media{
     display: flex;
@@ -120,4 +122,40 @@ footer{
     padding: 15vh;
     background: #f8f9fa;
     border-radius: 1vh;
+}
+.other-services{
+    display:flex;
+    flex-direction: column;
+    gap: 10vh
+}
+.service-article img{
+    width:100%;
+    max-width: 60vh;
+    height:auto;
+    object-fit:cover;
+
+}
+.product-carousel__products figure{
+    width: 25vh;
+    height: auto;
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: flex-end;
+    margin: 0 1vh;
+}
+.product-carousel__products figure img {
+  max-width: 100%;
+  height: auto;  /* control image height */
+  object-fit: contain; /* no cropping; empty space if shorter */
+}
+.product-carousel button{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.product-carousel button img{
+    max-height:10vh;
+    min-height: 40px;
+    width:auto;
 }
