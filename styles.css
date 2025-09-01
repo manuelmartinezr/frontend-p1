@@ -73,6 +73,10 @@ footer{
 .service-article{
     display:flex;
     white-space: pre-line;
+    gap: 5vh;
+}
+.right-item{
+    text-align: right;
 }
 .pc-container{
     display:grid;
@@ -89,4 +93,25 @@ footer{
     display:flex; 
     flex: 3;
     flex-direction: column;
+}
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: #333;
+  width: 100vh;  
+}
+
+.menu::before,.menu::after {
+  content: "";
+  flex-grow: 1;               
+  border-bottom: 1px solid #ccc;
+}
+
+.menu::before {
+  margin-right: 10vh;         
+}
+.menu::after {
+  margin-left: 10vh;           
 }
