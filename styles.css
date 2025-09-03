@@ -1,9 +1,6 @@
-
-
 html, body {
   height: 100%;
   margin: 0;
-  font-family: Arial, sans-serif;
 }
 
 body {
@@ -12,33 +9,33 @@ body {
 }
 
 
-nav {
+nav{
+    flex: 0 0 auto;
+    flex-direction: row;
     display: flex;
-    background-color: #fff;
-    border-bottom: 1px solid #eee;
-    padding: 10px;
+    background-color: gainsboro;
+    padding:1%
+
 }
 
-.page-links {
+.page-links{
     flex: 3;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
 }
-
-.user-actions {
+.user-actions{
     flex: 2;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
 }
-
-.page-link-ul {
+.page-link-ul{
     list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-    gap: 20px;
+    display:flex;
+    flex-direction: row;
+    width:60%;
+    justify-content: space-around;
 }
 
 .page-link-ul li a {
@@ -53,12 +50,16 @@ nav {
     border-radius: 4px;
 }
 
-main {
+main{
     flex: 1;
-    display: flex;
+    display:flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
+    gap:10vh
+}
+.user-actions img{
+    max-height:6vh;
+    width:auto
 }
 
 
@@ -91,32 +92,54 @@ main {
     margin: 20px 0;
 }
 
-
-footer {
-    display: flex;
-    padding: 20px;
-    background-color: #f9f9f9;
+footer{
+    flex: 0 0 auto;
+    display:flex;
+    background-color: gainsboro;
+    padding:1%
 }
 
-.footer-links {
-    flex: 3;
-    display: flex;
-    gap: 30px;
+.footer-links{
+    flex:3;
+    display:flex;
+    justify-content: space-around;
 }
-
-.social-media {
-    flex: 2;
+.footer-links img{
+    max-height:30vh;
+    width:auto
+}
+.social-media{
     display: flex;
     flex-direction: column;
+    flex: 2;
     align-items: center;
 }
-
-.sm-ul {
+.sm-ul{
     list-style: none;
-    display: flex;
-    gap: 15px;
-    margin: 0;
-    padding: 0;
+}
+.sm-ul img{
+    max-height:3vh;
+    width:auto
+}
+.contact-p{
+    white-space: pre-line;
+}
+.footer-links img{
+    max-height:30vh;
+    width:auto
+}
+a {
+  color: inherit;        
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+.store-article img{
+    max-width:40vw;
+    height:auto
 }
 
 
@@ -134,7 +157,7 @@ form textarea {
     border-radius: 4px;
 }
 
-button {
+.cf-button {
     padding: 10px 20px;
     background-color: #007bff;
     color: white;
@@ -142,13 +165,6 @@ button {
     border-radius: 4px;
     cursor: pointer;
 }
-
-
-img {
-    max-width: 100%;
-    height: auto;
-}
-
 
 @media screen and (max-width: 768px) {
     nav {
