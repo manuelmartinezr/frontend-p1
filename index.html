@@ -4,20 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing page</title>
-    <link rel="stylesheet" href="mystyles.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/index.css">
 </head>
-<body>
-    <nav>
-        <div class ="page-links">
+<body class="flex-col gap-8rem">
+    <nav class="flex">
+        <div class ="flex-cross-center page-links">
             <a href="#"><img src="assets/images/logo.png" alt="Logo"></a>
-            <ul class="page-link-ul">
+            <ul class="flex page-links-ul">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="stores.html">Stores</a></li>
                 <li><a href="products.html">Products</a></li>
             </ul>
         </div>
-        <div class="user-actions">
+        <div class="flex-cross-center user-actions">
             <input type="text" placeholder="Search...">
             <a href="#">
             <img src="assets/images/login.png" alt="Login">
@@ -27,25 +28,25 @@
             </a>
         </div>
     </nav>
-    <main>
-        <section class="product-carousel">
+    <main class="flex-col flex-cross-center gap-8rem">
+        <section class="flex gap-8rem product-carousel">
             <button>
                 <img src="assets/images/arrow_left.png" alt="left arrow">
             </button>
-            <div class="product-carousel__products">
-                <figure>
+            <div class="flex gap-5rem product-carousel__products">
+                <figure class="flex-col product-figure">
                     <img src="assets/images/croissant.png" alt="Croissant">
                     <figcaption>Croissant</figcaption>
                 </figure>
-                <figure>
+                <figure class="flex-col product-figure">
                     <img src="assets/images/cupcake.png" alt="Cupcake">
                     <figcaption>Cupcake</figcaption>
                 </figure>
-                <figure>
+                <figure class="flex-col product-figure">
                     <img src="assets/images/cake.png" alt="Cake">
                     <figcaption>Cake</figcaption>
                 </figure>
-                <figure>
+                <figure class="flex-col product-figure">
                     <img src="assets/images/empanada.png" alt="Empanada">
                     <figcaption>Empanada</figcaption>
                 </figure>
@@ -58,36 +59,36 @@
             <a href="products.html"><h2>Get yours now!</h2></a>
         </section>
         <section>
-            <h2 class="menu">Menu</h2>
+            <h2 class="flex-cross-center menu">Menu</h2>
             <div class="pc-container">
-                <div id="pc-container-1">
-                    <figure class="pc-container-1-item">
+                <div class="flex">
+                    <figure class="flex-col pc-item top-pc-item">
                         <img src="assets/images/desserts.jpg" alt="Desserts">
                         <figcaption>Desserts</figcaption>
                     </figure>
-                    <figure class="pc-container-1-item">
+                    <figure class="flex-col pc-item top-pc-item">
                         <img src="assets/images/pastries.jpg" alt="Pastries">
                         <figcaption>Pastries</figcaption>
                     </figure>
                 </div>
-                <div id="pc-container-2">
-                    <figure class="pc-container-2-item">
+                <div class="flex">
+                    <figure class="flex-col pc-item bottom-pc-item">
                         <img src="assets/images/cakes.jpg" alt="Cakes">
                         <figcaption>Cakes</figcaption>
                     </figure>
-                    <figure class="pc-container-2-item">
+                    <figure class="flex-col pc-item bottom-pc-item">
                         <img src="assets/images/frozen_products.jpg" alt="Frozen Products">
                         <figcaption>Frozen Products</figcaption>
                     </figure>
-                    <figure class="pc-container-2-item">
+                    <figure class="flex-col pc-item bottom-pc-item">
                         <img src="assets/images/bakery.jpg" alt="Bakery">
                         <figcaption>Bakery</figcaption>
                     </figure>
                 </div>
             </div>
         </section>
-        <section class="other-services">
-            <article class="service-article">
+        <section class="flex-col gap-8rem">
+            <article class="flex gap-5rem service-article">
                 <img src="assets/images/catering.jpeg" alt="Catering">
                 <div>
                     <h2>Catering</h2>
@@ -96,7 +97,7 @@
                     </p>
                 </div>
             </article>
-            <article class="service-article">
+            <article class="flex gap-5rem service-article">
                 <div>
                     <h2 class="right-item">Customized Cakes</h2>
                     <p class="right-item"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
@@ -108,8 +109,8 @@
 
         </section>
     </main>
-    <footer>
-        <div class="footer-links">
+    <footer class="flex">
+        <div class="flex footer-links">
             <img src="assets/images/map.jpg" alt="Map">
             <p>Visit our <a href="stores.html">stores!</a></p>
             <div>
@@ -120,9 +121,9 @@
                     ut labore et dolore magna aliqua. </p>
             </div>
         </div>
-        <div class="social-media">
+        <div class="flex-cross-center flex-col social-media">
             <h4>Social Media</h4>
-            <ul class="sm-ul">
+            <ul class="social-media-ul">
                 <li><a href="#"><img src="assets/images/twitter.png" alt="Twitter"></a></li>
                 <li><a href="#"><img src="assets/images/instagram.png" alt="Instagram"></a></li>
                 <li><a href="#"><img src="assets/images/tiktok.png" alt="TikTok"></a></li>

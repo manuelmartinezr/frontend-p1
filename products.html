@@ -4,20 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Products</title>
-    <link rel="stylesheet" href="mystyles.css">
+    <link rel="stylesheet" href="css/products.css">
+    <link rel="stylesheet" href="css/base.css">
 </head>
-<body>
-    <nav>
-        <div class ="page-links">
+<body class="flex-col gap-8rem">
+    <nav class="flex">
+        <div class ="flex-cross-center page-links">
             <a href="#"><img src="assets/images/logo.png" alt="Logo"></a>
-            <ul class="page-link-ul">
+            <ul class="flex page-links-ul">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="stores.html">Stores</a></li>
                 <li><a href="products.html">Products</a></li>
             </ul>
         </div>
-        <div class="user-actions">
+        <div class="flex-cross-center user-actions">
             <input type="text" placeholder="Search...">
             <a href="#">
             <img src="assets/images/login.png" alt="Login">
@@ -27,11 +28,11 @@
             </a>
         </div>
     </nav>
-    <main>
-        <section class="products-section">
+    <main class="flex-col flex-cross-center gap-8rem">
+        <section class="flex-col products-section">
             <h2>Desserts</h2>
-            <ul>
-                <li>
+            <ul class="flex products-section-ul">
+                <li class="flex-col products-section-li">
                     <img src="assets/images/croissant.png" alt="Croissant">
                     <div>
                         <h3>Name</h3>
@@ -40,7 +41,7 @@
                         <button>Add</button>
                     </div>
                 </li>
-                <li>
+                <li class="flex-col products-section-li">
                     <img src="assets/images/cupcake.png" alt="Cupcake">
                     <div>
                         <h3>Name</h3>
@@ -49,7 +50,7 @@
                         <button>Add</button>
                     </div>
                 </li>
-                <li>
+                <li class="flex-col products-section-li">
                     <img src="assets/images/cake.png" alt="Cake">
                     <div>
                         <h3>Name</h3>
@@ -61,7 +62,7 @@
             </ul>
             <h2>Bakery</h2>
             <ul>
-                <li>
+                <li class="products-section-li">
                     <img src="assets/images/baguette.png" alt="Bread">
                     <div>
                         <h3>Name</h3>
@@ -73,21 +74,21 @@
             </ul>
         </section>
     </main>
-        <footer>
-        <div class="footer-links">
+    <footer class="flex">
+        <div class="flex footer-links">
             <img src="assets/images/map.jpg" alt="Map">
             <p>Visit our <a href="stores.html">stores!</a></p>
             <div>
-                <a href="#"><h4>Contact</h4></a>
+                <a href=""><h4>Contact</h4></a>
                 <p class="contact-p">Lorem ipsum dolor sit amet,
                     consectetur adipiscing elit, 
                     sed do eiusmod tempor incididunt 
                     ut labore et dolore magna aliqua. </p>
             </div>
         </div>
-        <div class="social-media">
+        <div class="flex-cross-center flex-col social-media">
             <h4>Social Media</h4>
-            <ul class="sm-ul">
+            <ul class="social-media-ul">
                 <li><a href="#"><img src="assets/images/twitter.png" alt="Twitter"></a></li>
                 <li><a href="#"><img src="assets/images/instagram.png" alt="Instagram"></a></li>
                 <li><a href="#"><img src="assets/images/tiktok.png" alt="TikTok"></a></li>

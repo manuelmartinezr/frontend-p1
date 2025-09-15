@@ -1,0 +1,14 @@
+.products-section{
+    text-align: center;
+}
+.products-section-ul{
+    list-style: none;
+    gap:10vw;
+}
+.products-section-li{
+    justify-content: flex-end;
+}
+.products-section-li img{
+    max-width:10vw;
+    height:auto
+}
